@@ -15,8 +15,8 @@
 
                 this.el.addEventListener('click', function (e) {
 		
-                    let dragon = document.querySelector('#dragon-model')
-		    dragon.setAttribute('animation-mixer', "clip: Scene; loop: once;");
+                    let dragon = document.querySelector('#robotrex')
+		    dragon.setAttribute('animation-mixer', "clip: Take 001; loop: once;");
                     this.audio.play();
 			
                   console.log(e)
@@ -38,8 +38,8 @@
                 }.bind(this));
                 this.el.addEventListener('touchstart', function (e) {
 		
-                    let dragon = document.querySelector('#dragon-model')
-		    dragon.setAttribute('animation-mixer', "clip: Scene; loop: once;");
+                    let robotrex = document.querySelector('#robotrex')
+		    dragon.setAttribute('animation-mixer', "clip: Take 001; loop: once;");
                     this.audio.play();
 			console.log(e)
                 }.bind(this));
@@ -51,7 +51,7 @@
 		
                 this.el.addEventListener('animation-finished', function (e) {
 			 console.log(e)
-                    let dragon = document.querySelector('#dragon-model')
+                    let robotrex = document.querySelector('#robotrex')
 		    dragon.removeAttribute('animation-mixer');
                 }.bind(this));
 		
@@ -64,11 +64,11 @@
   <body style="margin: 0; overflow: hidden;">
     <a-scene renderer="colorManagement: true">
        <a-assets>
-        <a-asset-item id="dragon" response-type="arraybuffer" src="./dragon.glb"></a-asset-item>
-        <audio id="roar" src="./assets/roar.wav"></audio>
+        <a-asset-item id="robotrex" response-type="arraybuffer" src="./robotrex.glb"></a-asset-item>
+        <audio id="roar" src="./UWU _ Sound Effect [ Meme ].mp3"></audio>
       </a-assets>
-      <a-entity event-listener id="dragon-model"  
-        gltf-model="#dragon" 
+      <a-entity event-listener id="robotrex"  
+        gltf-model="#robotrex" 
         scale=".5 .5 .5" 
         position = "0 0 -5" 
         rotation="0 0 0" 
