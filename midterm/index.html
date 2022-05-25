@@ -15,8 +15,8 @@
 
                 this.el.addEventListener('click', function (e) {
 		
-                    let dragon = document.querySelector('#robotrex')
-		    dragon.setAttribute('animation-mixer', "clip: Take 001; loop: once;");
+                    let robotrex = document.querySelector('#robotrex')
+		    robotrex.setAttribute('animation-mixer', "clip: Take 001; loop: once;");
                     this.audio.play();
 			
                   console.log(e)
@@ -39,7 +39,7 @@
                 this.el.addEventListener('touchstart', function (e) {
 		
                     let robotrex = document.querySelector('#robotrex')
-		    dragon.setAttribute('animation-mixer', "clip: Take 001; loop: once;");
+		  robotrex.setAttribute('animation-mixer', "clip: Take 001; loop: once;");
                     this.audio.play();
 			console.log(e)
                 }.bind(this));
@@ -52,7 +52,7 @@
                 this.el.addEventListener('animation-finished', function (e) {
 			 console.log(e)
                     let robotrex = document.querySelector('#robotrex')
-		    dragon.removeAttribute('animation-mixer');
+		    robotrex.removeAttribute('animation-mixer');
                 }.bind(this));
 		
             }
@@ -69,8 +69,8 @@
       </a-assets>
       <a-entity event-listener id="robotrex"  
         gltf-model="#robotrex" 
-        scale="0.060 0.060 0.060" 
-        position = "0 0 0" 
+        scale="0.4 0.04 0.04" 
+        position = "0 0 -5" 
         rotation="0 0 0" 
       >
       </a-entity>
